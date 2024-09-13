@@ -50,6 +50,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.0")
     implementation("androidx.compose.ui:ui-tooling:1.5.0")
     implementation("androidx.compose.compiler:compiler:1.5.1")
-    implementation("com.github.Skylinets:skylineui:-SNAPSHOT")
+   // implementation("com.github.Skylinets:skylineui:-SNAPSHOT")
   //  implementation("com.github.Skylinets:skylineui:v1.0.0")
 }
