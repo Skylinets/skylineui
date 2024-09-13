@@ -7,7 +7,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.runtime.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,12 +20,10 @@ class MainActivity : ComponentActivity() {
                 modifier = androidx.compose.ui.Modifier.fillMaxSize(),
                 color = MaterialTheme.colors.background
             ) {
-                var password by remember { mutableStateOf("") }
                 PassWordText(
                     isDarkTheme = false,
-                    password = password,
-                    onPasswordChange = { newPassword ->
-                        password = newPassword
+                    password = "",
+                    onPasswordChange = {
                     }
                 )
             }
