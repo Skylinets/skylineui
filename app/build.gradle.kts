@@ -27,11 +27,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -50,6 +50,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.0")
     implementation("androidx.compose.ui:ui-tooling:1.5.0")
     implementation("androidx.compose.compiler:compiler:1.5.1")
-
+    implementation("com.github.Skylinets:skylineui:-SNAPSHOT")
   //  implementation("com.github.Skylinets:skylineui:v1.0.0")
 }
